@@ -1,0 +1,18 @@
+P24
+避免死锁：尽量不要对锁进行嵌套的方式可以避免死锁
+
+P27
+定义锁的时候定义成final类型，防止被修改为null
+wait和sleep的区别：
+1.sleep是thread的方法，wait是Object的方法
+2.sleep不会释放锁，wait会释放锁
+3.sleep不需要依赖于monitor锁，wait需要
+4.sleep不需要唤醒，wait需要唤醒
+
+p28
+当cpu性能低下的时候，看是否是线程开辟数量过多，因为线程过多，cpu忙于切换线程加载上下文浪费资源
+
+P31 添加钩子
+Runtime.getRuntime().addShutdownHook(new Thread());
+
+P32
